@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		F6F17F4D295F475D001300BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F17F4C295F475D001300BD /* AppDelegate.swift */; };
 		F6F17F4F295F475D001300BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F17F4E295F475D001300BD /* SceneDelegate.swift */; };
-		F6F17F51295F475D001300BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F17F50295F475D001300BD /* ViewController.swift */; };
-		F6F17F54295F475D001300BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F17F52295F475D001300BD /* Main.storyboard */; };
 		F6F17F56295F4761001300BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F17F55295F4761001300BD /* Assets.xcassets */; };
 		F6F17F59295F4761001300BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F17F57295F4761001300BD /* LaunchScreen.storyboard */; };
 		F6F17F64295F4762001300BD /* Video_PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F17F63295F4762001300BD /* Video_PlayerTests.swift */; };
 		F6F17F6E295F4762001300BD /* Video_PlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F17F6D295F4762001300BD /* Video_PlayerUITests.swift */; };
 		F6F17F70295F4762001300BD /* Video_PlayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F17F6F295F4762001300BD /* Video_PlayerUITestsLaunchTests.swift */; };
+		F6F17F7E295F47E0001300BD /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F17F7D295F47E0001300BD /* HomeVC.swift */; };
+		F6F17F80295F4A4F001300BD /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F6F17F7F295F4A4E001300BD /* testVideo.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		F6F17F49295F475D001300BD /* Video_Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Video_Player.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F17F4C295F475D001300BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6F17F4E295F475D001300BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F6F17F50295F475D001300BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F6F17F53295F475D001300BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6F17F55295F4761001300BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6F17F58295F4761001300BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6F17F5A295F4761001300BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		F6F17F69295F4762001300BD /* Video_PlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Video_PlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F17F6D295F4762001300BD /* Video_PlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video_PlayerUITests.swift; sourceTree = "<group>"; };
 		F6F17F6F295F4762001300BD /* Video_PlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video_PlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F6F17F7D295F47E0001300BD /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		F6F17F7F295F4A4E001300BD /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,9 @@
 		F6F17F4B295F475D001300BD /* Video_Player */ = {
 			isa = PBXGroup;
 			children = (
-				F6F17F4C295F475D001300BD /* AppDelegate.swift */,
-				F6F17F4E295F475D001300BD /* SceneDelegate.swift */,
-				F6F17F50295F475D001300BD /* ViewController.swift */,
-				F6F17F52295F475D001300BD /* Main.storyboard */,
+				F6F17F7C295F47AD001300BD /* Delegate */,
+				F6F17F7D295F47E0001300BD /* HomeVC.swift */,
+				F6F17F81295F4A54001300BD /* VideoFiles */,
 				F6F17F55295F4761001300BD /* Assets.xcassets */,
 				F6F17F57295F4761001300BD /* LaunchScreen.storyboard */,
 				F6F17F5A295F4761001300BD /* Info.plist */,
@@ -125,6 +124,23 @@
 				F6F17F6F295F4762001300BD /* Video_PlayerUITestsLaunchTests.swift */,
 			);
 			path = Video_PlayerUITests;
+			sourceTree = "<group>";
+		};
+		F6F17F7C295F47AD001300BD /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F6F17F4C295F475D001300BD /* AppDelegate.swift */,
+				F6F17F4E295F475D001300BD /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		F6F17F81295F4A54001300BD /* VideoFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F6F17F7F295F4A4E001300BD /* testVideo.mp4 */,
+			);
+			path = VideoFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +249,7 @@
 			files = (
 				F6F17F59295F4761001300BD /* LaunchScreen.storyboard in Resources */,
 				F6F17F56295F4761001300BD /* Assets.xcassets in Resources */,
-				F6F17F54295F475D001300BD /* Main.storyboard in Resources */,
+				F6F17F80295F4A4F001300BD /* testVideo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6F17F51295F475D001300BD /* ViewController.swift in Sources */,
+				F6F17F7E295F47E0001300BD /* HomeVC.swift in Sources */,
 				F6F17F4D295F475D001300BD /* AppDelegate.swift in Sources */,
 				F6F17F4F295F475D001300BD /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +313,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F6F17F52295F475D001300BD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6F17F53295F475D001300BD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F6F17F57295F4761001300BD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +450,6 @@
 				INFOPLIST_FILE = Video_Player/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +477,6 @@
 				INFOPLIST_FILE = Video_Player/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
